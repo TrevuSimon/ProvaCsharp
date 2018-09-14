@@ -1,17 +1,37 @@
 ﻿@page
-@model IndexModel
+@model ProvaGuilherme.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    Layout = null;
 }
 
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Formulario 1:<a asp-page="/CadastroPessoa">Cadastras pessoa</a></li>
-            <li>Formulario 2:<a asp-page="/Index">Cadastrar endereco</a></li>
-            <li>Formulario 3:<a asp-page="/Index">Cadastrar detalhes1</a></li>
-        </ul>
-    </div>
-</div>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body style="margin:auto; width:30%">
+    <form method="post">
+        <div class="form-group">
+            Login:<input type="text" id="txtLogin" name="Login" class="form-control" /><br />
+            Senha:<input type="password" id="txtSenha" name="Password" class="form-control" /><br />
+
+            <input type="submit" value="Logar" class="btn btn-default btn-block" />
+
+        </div>
+    </form>
+</body>
+</html>
