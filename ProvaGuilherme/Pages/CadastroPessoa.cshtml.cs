@@ -9,6 +9,8 @@ namespace ProvaGuilherme.Pages
 {
     public class CadastroPessoaModel : PageModel
     {
+        public static List<CadastroPessoaModel> ListaPessoas = new List<CadastroPessoaModel>();
+
         [BindProperty]
         public String Nome { get; set; }
         [BindProperty]
@@ -25,11 +27,18 @@ namespace ProvaGuilherme.Pages
         public String CPF { get; set; }
         [BindProperty]
         public String RG { get; set; }
-
+        [BindProperty]
+        public String EstadoCivil { get; set; }
 
         public void OnGet()
         {
 
+        }
+
+        public RedirectToPageResult OnPost()
+        {
+            CadastroPessoaModel.ListaPessoas.Add(this);
+            return null;
         }
     }
 }
