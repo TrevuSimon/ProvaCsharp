@@ -9,7 +9,7 @@ namespace ProvaGuilherme.Pages
 {
     public class CadastroPessoaModel : PageModel
     {
-        public static List<CadastroPessoaModel> ListaPessoas = new List<CadastroPessoaModel>();
+        public static List<CadastroPessoaModel> ListaPessoas { get; set; } = new List<CadastroPessoaModel>();
 
         [BindProperty]
         public String Nome { get; set; }
