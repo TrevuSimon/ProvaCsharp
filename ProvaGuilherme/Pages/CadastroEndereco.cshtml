@@ -6,7 +6,8 @@
 
 <h2>CadastroEndereco - 2</h2>
 <form method="post">
-    <select name="Pessoa">
+    <label for="txtPessoa">Pessoa</label>
+    <select name="Pessoa" class="form-control">
         @foreach (var item in CadastroPessoaModel.ListaPessoas)
         {
             <option value="@item.Nome">@item.Nome</option>
@@ -14,20 +15,25 @@
     </select>
 
     <br />
+    <label for="txtEstado">Estado</label>
 
-    <select name="Estado">
-        <option value="parana"></option>
-        <option value="sao paulo"></option>
-        <option value="rio de janeiro"></option>
+    <select name="Estado" class="form-control">
+        <option value="parana">parana</option>
+        <option value="sao paulo">sao paulo</option>
+        <option value="rio de janeiro">io de janeiro</option>
+    </select>
+
+    <br />
+    <label for="txtCidade">Cidade</label>
+
+    <select name="Cidade" class="form-control">
+        <option value="curitiba">curitiba</option>
+        <option value="sao paulo">sao paulo</option>
+        <option value="rio de janeiro">rio de janeiro</option>
     </select>
 
     <br />
 
-    <select name="Cidade">
-        <option value="curitiba"></option>
-        <option value="sao paulo"></option>
-        <option value="rio de janeiro"></option>
-    </select>
 
     <label for="txtCEP">CEP</label>
     <input type="text" id="txtCEP" name="CEP" class="form-control" />

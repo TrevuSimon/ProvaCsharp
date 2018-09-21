@@ -11,9 +11,9 @@ namespace ProvaGuilherme.Pages
     {
         public CadastroEnderecoModel Result { get; set; }
 
-        public void OnGet(object obj)
+        public void OnGet(CadastroEnderecoModel obj)
         {
-            Result = (CadastroEnderecoModel)obj;
+            Result = obj;
         }
     }
 }

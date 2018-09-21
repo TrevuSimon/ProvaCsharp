@@ -20,9 +20,9 @@ namespace ProvaGuilherme.Pages
         [BindProperty]
         public String Restaurante { get; set; }
 
-        public void OnGet(object obj)
+        public void OnGet(CadastroDetalhesModel obj)
         {
-            Result = (CadastroDetalhesModel)obj;
+            Result = obj;
         }
 
         public RedirectToPageResult OnPost()
