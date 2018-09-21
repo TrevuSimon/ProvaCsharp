@@ -6,3 +6,23 @@
 
 <h2>CadastroDetalhes - 3</h2>
 
+<form>
+    <label for="txtComida">Comida favorita</label>
+    <input type="text" id="txtComida" name="Comida" class="form-control" />
+
+    <label for="txtCor">Cor favorita</label>
+    <input type="text" id="txtCor" name="Cor" class="form-control" />
+
+    <label for="txtSuco">Suco favorito</label>
+    <input type="text" id="txtSuco" name="Suco" class="form-control" />
+
+    <label for="txtRestaurante">Restaurante favorito</label>
+    <input type="text" id="txtRestaurante" name="Restaurante" class="form-control" />
+</form>
+
+<hr />
+
+Comida: @Model.Result.Comida<br />
+Cor: @Model.Result.Cor<br />
+Suco: @Model.Result.Suco<br />
+Restaurante: @Model.Result.Restaurante<br />
