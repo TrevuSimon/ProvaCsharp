@@ -5,7 +5,7 @@
 }
 
 <h2>CadastroEndereco - 2</h2>
-<form>
+<form method="post">
     <select name="Pessoa">
         @foreach (var item in CadastroPessoaModel.ListaPessoas)
         {
@@ -13,11 +13,15 @@
         }
     </select>
 
+    <br />
+
     <select name="Estado">
         <option value="parana"></option>
         <option value="sao paulo"></option>
         <option value="rio de janeiro"></option>
     </select>
+
+    <br />
 
     <select name="Cidade">
         <option value="curitiba"></option>

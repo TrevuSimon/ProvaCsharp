@@ -34,7 +34,7 @@ namespace ProvaGuilherme.Pages
         public RedirectToPageResult OnPost()
         {
             
-            return RedirectToPage("ResultadoEndereco",this); ;
+            return RedirectToPage("ResultadoEndereco",this);
         }
     }
 }
