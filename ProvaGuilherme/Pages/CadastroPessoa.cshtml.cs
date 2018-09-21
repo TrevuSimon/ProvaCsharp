@@ -38,7 +38,7 @@ namespace ProvaGuilherme.Pages
         public RedirectToPageResult OnPost()
         {
             CadastroPessoaModel.ListaPessoas.Add(this);
-            return null;
+            return RedirectToPage("ResultadoPessoa");
         }
     }
 }

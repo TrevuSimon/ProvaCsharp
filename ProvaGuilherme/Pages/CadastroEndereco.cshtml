@@ -5,4 +5,39 @@
 }
 
 <h2>CadastroEndereco - 2</h2>
+<form>
+    <select name="Pessoa">
+        @foreach (var item in CadastroPessoaModel.ListaPessoas)
+        {
+            <option value="@item.Nome">@item.Nome</option>
+        }
+    </select>
+
+    <select name="Estado">
+        <option value="parana"></option>
+        <option value="sao paulo"></option>
+        <option value="rio de janeiro"></option>
+    </select>
+
+    <select name="Cidade">
+        <option value="curitiba"></option>
+        <option value="sao paulo"></option>
+        <option value="rio de janeiro"></option>
+    </select>
+
+    <label for="txtCEP">CEP</label>
+    <input type="text" id="txtCEP" name="CEP" class="form-control" />
+
+    <label for="txtRua">Rua</label>
+    <input type="text" id="txtNome" name="Rua" class="form-control" />
+
+    <label for="txtBairro">Bairro</label>
+    <input type="text" id="txtBairro" name="Bairro" class="form-control" />
+
+    <label for="txtNumero">Numero</label>
+    <input type="text" id="txtNumero" name="Numero" class="form-control" />
+
+    <label for="txtComplemento">Complemento</label>
+    <input type="text" id="txtComplemento" name="Complemento" class="form-control" />
+</form>
 

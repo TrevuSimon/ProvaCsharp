@@ -1,0 +1,24 @@
+﻿@page
+@model ProvaGuilherme.Pages.ResultadoEnderecoModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ResultadoEndereco</title>
+</head>
+<body>
+    Pessoa:     @Model.Result.Pessoa
+    Estado:     @Model.Result.Estado
+    Cidade:     @Model.Result.Cidade
+    CEP:        @Model.Result.CEP
+    Rua:        @Model.Result.Rua
+    Bairro:     @Model.Result.Bairro
+    Numero:     @Model.Result.Numero
+    Complemento:@Model.Result.Complemento
+</body>
+</html>
